@@ -13,7 +13,9 @@
         "guzzlehttp/guzzle": "~6.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "mgoigfer/laravel-spotify-wrapper": "^0.2.1"
+        "nyholm/psr7": "^1.2",
+        "symfony/psr-http-message-bridge": "^2.0",
+        "zendframework/zend-diactoros": "^2.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

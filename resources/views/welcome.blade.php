@@ -82,7 +82,24 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+
+                    @if(Auth::check())
+
+                        <img src="{{$user->avatar}}" alt=""/>
+                        <!-- {{$user}} -->
+                    @endif
                 </div>
+
+
+                @if(Auth::check())
+
+                    <a href="/auth/spotify/logout"> Logout</a>
+                
+                @else
+                    
+                    <a href="{{route('spotify')}}"> Log in</a>
+
+                @endif
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
